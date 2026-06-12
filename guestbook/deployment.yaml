@@ -18,3 +18,8 @@ spec:
           image: rafi1945/fastapi-argocd-app:948153949abaf49d8f20370905afdae4b70e0fc3
           ports:
             - containerPort: 80
+          env:
+            - name: MLFLOW_TRACKING_URI
+            value: "http://host.docker.internal:5000"
+            - name: MODEL_URI
+            value: "models:/IrisClassifier/1"
