@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: guestbook-ui
-          image: rafi1945/fastapi-argocd-app:b78734f81fcdda3c73e8af41f4928a48a338030e
+          image: rafi1945/fastapi-argocd-app:ded0e2408587e2d26ba9266531e44836a18a9385
           ports:
             - containerPort: 8000
           env:
